@@ -15,7 +15,8 @@ int partition(vector<int> &arr, int st, int end)
         }
     }
     i++;
-    swap(arr[end], arr[i]); // won't work as pivot is just a copy of arr[end], not a reference to the actual array element.
+    swap(arr[end], arr[i]);
+    //swap(pivot, arr[i]); // won't work as pivot is just a copy of arr[end], not a reference to the actual array element.
     return i;
 }
 
